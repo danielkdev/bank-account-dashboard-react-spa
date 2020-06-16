@@ -1,0 +1,79 @@
+{
+  "accounts": [
+    {
+      "id": 1000,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "phone": "5555555555",
+      "created": "2020-02-21T02:00:00.000Z",
+      "balance": 100,
+      "transactions": [
+        {
+          "id": 1000,
+          "created": "2020-02-21T20:32:03.681Z",
+          "amount": 2000,
+          "type": "Debit",
+          "description": "Payroll Direct Deposit"
+        },
+        {
+          "id": 999,
+          "created": "2020-02-21T20:14:09.703Z",
+          "amount": 45.55,
+          "type": "Credit",
+          "description": "Main Street Gas Station"
+        }
+      ]
+    },
+    {
+      "id": 1001,
+      "firstName": "Jhon",
+      "lastName": "Dosan",
+      "email": "jane.smith@example.com",
+      "phone": "5555555555",
+      "created": "2020-02-21T02:00:00.000Z",
+      "balance": 100,
+      "transactions": [
+        {
+          "id": 1000,
+          "created": "2020-02-21T20:32:03.681Z",
+          "amount": 2000,
+          "type": "Debit",
+          "description": "Payroll Direct Deposit"
+        },
+        {
+          "id": 999,
+          "created": "2020-02-21T20:14:09.703Z",
+          "amount": 45.55,
+          "type": "Credit",
+          "description": "Main Street Gas Station"
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "firstName": "Denail",
+      "lastName": "Khan",
+      "email": "jane.smith@example.com",
+      "phone": "5555555555",
+      "created": "2020-02-21T02:00:00.000Z",
+      "balance": 100,
+      "transactions": [
+        {
+          "id": 1000,
+          "created": "2020-02-21T20:32:03.681Z",
+          "amount": 2000,
+          "type": "Debit",
+          "description": "Payroll Direct Deposit"
+        },
+        {
+          "id": 999,
+          "created": "2020-02-21T20:14:09.703Z",
+          "amount": 45.55,
+          "type": "Credit",
+          "description": "Main Street Gas Station"
+        }
+      ]
+    }
+  ]
+}

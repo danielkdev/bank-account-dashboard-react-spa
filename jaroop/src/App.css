@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* #278aff */
+/* Body CSS End */
+.wrapper {
+  padding: 50px 0;
+}
+.dash_container {
+  max-width: 1199px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.welcome-box {
+  background-image: linear-gradient(
+    to right,
+    #1d7fff,
+    #178aff,
+    #1f95ff,
+    #2f9fff,
+    #41a9ff
+  );
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.welcome-box h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #f1f1f1;
+  margin-bottom: 7px;
+}
+.welcome-box p {
+  font-size: 14px;
+  color: #f1f1f1;
+  margin-bottom: 0;
+}
+
+.account-information {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.account-information:before,
+.transaction_table:before {
+  content: "";
+  width: 3px;
+  height: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    #1d7fff,
+    #178aff,
+    #1f95ff,
+    #2f9fff,
+    #41a9ff
+  );
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  transform: translateY(-50%);
+}
+.account-information .username {
+  font-size: 22px;
+  color: #4e4e4e;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.account-information .account_no {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+.account-information span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+.user-info ul {
+  margin-top: 25px;
+}
+.user-info li {
+  display: flex;
+  color: #4e4e4e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.user-info li span {
+  width: 120px;
+  flex: 0 0 120px;
+}
+.user-info li p {
+  width: 75%;
+  flex: 0 0 75%;
+  margin-bottom: 0;
+}
+.balance-info {
+  max-width: 200px;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.balance-info span {
+  font-size: 14px;
+  color: #4e4e4e;
+  margin-bottom: 7px;
+  display: block;
+}
+.balance-info .balance {
+  color: #1d7fff;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.transaction_table {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+}
+.transaction_table:before {
+  top: 50px;
+}
+.transaction_table table {
+  border: none;
+  margin-bottom: 0;
+}
+.transaction_table tr {
+  border-bottom: 1px solid #ededed;
+}
+.transaction_table tr:last-child {
+  border-bottom: none;
+}
+.transaction_table th,
+.transaction_table td {
+  border: none !important;
+  font-size: 14px;
+}
+.transaction_table td {
+  color: #4e4e4e;
+}
+
+.transaction_table h4 {
+  font-size: 22px;
+  color: #4e4e4e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.transaction_table .form-control {
+  max-width: 200px;
+  margin-left: auto;
+  border-radius: 23px;
+  color: #4e4e4e;
+  font-weight: 600;
+}
+.transaction_table .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*--- Responsive ---*/
+
+@media (max-width: 767px) {
+  .account-information .username {
+    font-size: 20px;
+  }
+  .account-information .account_no {
+    font-size: 18px;
+  }
+  .account-information:before,
+  .transaction_table:before {
+    top: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .account-information .account_no {
+    font-size: 16px;
+  }
+  .balance-info {
+    margin-top: 0;
+    max-width: 150px;
+  }
+  .balance-info .balance {
+    font-size: 22px;
+  }
+  .user-info li {
+    font-size: 12px;
+  }
+  .transaction_table h4 {
+    font-size: 18px;
+  }
+  .transaction_table th,
+  .transaction_table td {
+    font-size: 12px;
+  }
+  .welcome-box h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-info li {
+    display: block;
+  }
+  .user-info li p {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .user-info ul {
+    width: 260px;
+  }
+  .transaction_table h4 {
+    margin-bottom: 0;
+  }
+  .transaction_table th,
+  .transaction_table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .balance-info .balance {
+    font-size: 20px;
+  }
+  .wrapper {
+    padding: 30px 0;
+  }
+}
